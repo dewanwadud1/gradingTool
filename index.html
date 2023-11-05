@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Grading Tool</title>
+</head>
+
+<body>
+
+    <div id="grading-tool">
+        <section id="overall-description">
+            <h2>Overall Description (50)</h2>
+            <label><input type="checkbox" id="intro"> Introduction</label>
+            <label><input type="checkbox" id="comparisons"> Comparisons, Swaps & Run Time</label>
+            <label><input type="checkbox" id="justification"> Justification for Choosing Final Sorting Algorithms</label>
+            <label><input type="checkbox" id="challenges-en"> Challenges Encountered</label>
+            <label><input type="checkbox" id="method-by-method"> Method by Method Implementation</label>
+            <label><input type="checkbox" id="conclusion"> Conclusion</label>
+        </section>
+
+        <!-- Add other sections here -->
+
+        <section id="code-review">
+            <h2>Code Review (10)</h2>
+            <label><input type="checkbox" id="proper-impl"> Proper Implementation</label>
+            <label><input type="checkbox" id="proper-doc"> Proper Documentation</label>
+            <label><input type="checkbox" id="readability"> Readability</label>
+            <label><input type="checkbox" id="code-as-in"> Code File as Instructed</label>
+        </section>
+
+        <section id="presentation">
+            <h2>Presentation (20)</h2>
+            <label><input type="checkbox" id="cover-page"> Cover Page</label>
+            <label><input type="checkbox" id="formatting"> Correct Formatting</label>
+            <label><input type="checkbox" id="punctuation-typos"> No Punctuation & Typos</label>
+            <label><input type="checkbox" id="graphs-figures"> Graphs/Figures/Tables to Present the Findings</label>
+        </section>
+
+        <section id="challenges-discussion">
+            <h2>Challenges & Discussion (20)</h2>
+            <label><input type="checkbox" id="valid-challenges"> Identified Valid Challenges</label>
+            <label><input type="checkbox" id="overcome-challenges"> Successfully Overcame the Challenges</label>
+            <label><input type="checkbox" id="logical-discussion"> Logical and Solid Discussion</label>
+        </section>
+
+        <button onclick="calculateScore()">Calculate Score</button>
+        <button onclick="resetForm()">Reset</button>
+        <div id="total-score"></div>
+        <div id="comments"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
